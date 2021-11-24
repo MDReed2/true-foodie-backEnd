@@ -1,7 +1,7 @@
 'use strict'
 
 // creating a base name for the mongodb
-const mongooseBaseName = 'true-foodie-backEnd'
+const mongooseBaseName = 'true-foodie-menu-db'
 
 // create the mongodb uri for development and test
 const database = {
@@ -14,7 +14,7 @@ const database = {
 const localDb = process.env.TESTENV ? database.test : database.development
 
 // Environment variable DB_URI will be available in
-// heroku production evironment otherwise use test or development db
+// heroku production environment otherwise use test or development db
 const currentDb = process.env.DB_URI || localDb
 
 module.exports = currentDb
