@@ -15,7 +15,7 @@ curl "${API}${URL_PATH}" \
   --header "Authorization: Bearer ${TOKEN}" \
   --data '{
     "menu": {
-      "menu": "'"${MENU}"'",
+      "menu": "'"${CATEGORY}"'",
       "name": "'"${NAME}"'",
       "description": "'"${DESCRIPTION}"'",
       "calories": "'"${CALORIES}"'",
